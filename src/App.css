@@ -7,6 +7,44 @@
   pointer-events: none;
 }
 
+.button-A {
+  background-color: #46139f;
+  width: 100%;
+}
+
+.button-B {
+  background-color: #ff7f50;
+  width: 100%;
+}
+
+.button-C {
+  border: 1px solid #46139f !important;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.button-items {
+  background: white;
+  width: 100%;
+}
+
+.button-items:hover {
+  border: 1px solid #46139f;
+}
+
+.checkbox {
+  background: none;
+  border: none;
+}
+
+input {
+  padding-left: 5px;
+}
+
+span {
+  padding: 30px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

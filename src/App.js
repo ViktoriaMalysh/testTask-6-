@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Container, Row, Col } from "bootstrap-4-react";
+import ModalContacts from "./components/ModalContacts";
 
-function App() {
+const App = () => {
+  const rowStyle = {
+    height: "100vh",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Row justifyContent="md-center" style={rowStyle} alignItems="center">
+        <Col col="sm-2" href="#allCont">
+          <ModalContacts contactsType={"all"} name={"A"} className="button-A" />
+        </Col>
+
+        <Col col="sm-2">
+          <ModalContacts contactsType={"us"} name={"B"} className="button-B" />
+        </Col>
+      </Row>
+    </Container>
   );
-}
+};
 
 export default App;
